@@ -4,54 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Html p1</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav>
-        <ul>
-       <li><a href="http://">HOME</a></li>
-       <li><a href="http://">ABOUT</a></li>
-       <li><a href="http://">WORK</a></li>
-       <li><a href="http://">RESUME</a></li>
-       <li><a href="http://">CONTACT</a></li>
-        </ul>
-    </nav>
+    <nav class="navsection">
+        <div class="navicon">
+            <ul>
+                <li><a href="http://">HOME</a></li>
+                <li><a href="http://">ABOUT</a></li>
+                <li><a href="http://">WORK</a></li>
+                <li><a href="http://">RESUME</a></li>
+                <li><a href="http://">CONTACT</a></li>
+            </ul>
+        </div>
+            <div class="logo">
+                <img class="imagelogo" src="data:image/jpeg;base64,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" alt="logo" height="100px">
+            </div>
+        </nav>
+        <header class="header">
+           <h2>
+            MY PORTFOLIO
+           </h2>
+        </header>
 
-
-    <section>
-        ABOUT
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis placeat omnis assumenda officiis nam! Exercitationem vitae possimus aut molestias, facere ipsum impedit temporibus blanditiis vel alias repellat accusantium autem. Ratione consequuntur tenetur ut beatae accusamus. Explicabo, quae deserunt quisquam quos repellendus, fugiat inventore nostrum quasi neque saepe quaerat sed reiciendis dolorum quam aperiam, distinctio voluptatum beatae recusandae officia. Amet, voluptas ipsum odit iusto vel sit tempora officiis ab molestiae! Eaque nostrum id natus repellendus amet. Autem accusamus minima exercitationem at blanditiis earum eveniet tempore consequatur optio deleniti amet maiores, sed quo soluta ut possimus doloremque. Sunt porro qui corrupti voluptatem voluptatum, delectus ratione nam animi aliquam voluptatibus culpa dolores illo! Iure assumenda distinctio repudiandae perferendis nobis facilis quidem velit obcaecati, enim placeat fugit consequatur accusamus. Temporibus animi a quam nihil minus ipsum soluta quia quas vitae aliquam, quibusdam atque, laudantium ex provident modi unde odit nulla ipsa nisi maxime officiis eum deserunt debitis eius! Quasi necessitatibus perferendis sed reiciendis neque aut sunt obcaecati quaerat a, similique non in unde officia animi. Eaque corrupti, aliquid sunt esse incidunt tenetur odit quod minima aspernatur? Reprehenderit fuga doloribus molestias veritatis provident minima excepturi, odio saepe velit atque, eaque necessitatibus? Illo rerum, nihil ea possimus fugit obcaecati nam, nemo quae sequi voluptatem eius tenetur nulla assumenda facere beatae voluptatibus animi, eaque quasi labore fugiat ullam. Hic laborum incidunt ducimus consequatur sit accusamus nisi placeat molestiae est provident reiciendis ad unde, voluptates ipsa. Ullam, saepe? Voluptas eum officiis repellendus in dolorem molestiae ratione ex explicabo aspernatur voluptates. Earum dolorem nulla soluta accusantium ea aliquid voluptate esse, sapiente sed voluptas dolorum harum doloribus ducimus suscipit facere nisi. Provident doloribus animi nihil distinctio laborum consequatur, maxime esse, nesciunt laboriosam ea ex temporibus commodi deserunt quae, ipsum consectetur neque enim ipsam. Veritatis quidem, numquam tempore debitis laborum praesentium magnam facilis sequi, quia voluptate quisquam veniam. Voluptates sed sint a itaque corrupti recusandae rerum aspernatur distinctio reprehenderit sunt minus accusamus quia sit, possimus eaque quibusdam laudantium voluptatum molestiae praesentium magnam quis enim qui earum. Ullam vitae vel sunt placeat doloremque dolore eligendi fugit, odio at earum ducimus nihil tempora repudiandae voluptatibus dolores doloribus tenetur enim dicta quia tempore ab. Error reprehenderit illum, officiis recusandae libero commodi consectetur? Neque, quis? Dolore, fuga ut similique porro itaque nulla incidunt earum a, quasi dicta ducimus, odit dolor sunt atque vitae architecto. Velit ad omnis iusto aliquid commodi et voluptatum dolores nemo nihil officia sit saepe unde vel optio, nesciunt eligendi aspernatur rem eaque neque, quia ex nulla deleniti labore illo? Autem laudantium, illo nobis laboriosam deleniti sint mollitia eaque ad labore, rerum ipsam. Fugit enim a expedita doloribus temporibus velit suscipit, ratione obcaecati minus voluptate ipsum autem. Beatae officia omnis, ad est quas adipisci accusantium culpa repellat qui hic minus mollitia, quod iure, quia sequi. Distinctio tempora rem deleniti a similique assumenda voluptatibus, expedita molestias voluptate officiis obcaecati quas quo ratione doloremque aspernatur cum enim natus suscipit quos accusamus labore? Odit provident voluptatem, dolor temporibus explicabo nulla deleniti consequuntur labore reprehenderit amet</p>
+    <section class="section1">
+       <h2>ABOUT</h2>
+       <img class="style-image" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/new-year-background-736885_1280.jpg" alt="image" height="150px" width="300px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quas delectus nostrum, <br>voluptate modi illo pariatur nihil quasi possimus deserunt? Lorem ipsum dolor sit, <br>amet consectetur adipisicing elit. Animi voluptate explicabo perferendis eaque blanditiis veritatis deserunt illum, <br>iure facilis perspiciatis consequatur quia. Enim nam a libero aliquid cum architecto assumenda cupiditate <br>blanditiis nesciunt, et dolorum obcaecati reprehenderit, fugiat laboriosam modi quibusdam at sapiente eveniet, <br>culpa quasi sequi! Atque, rem impedit.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium harum impedit nisi quidem quasi earum illo ducimus vitae iure magnam sit corporis, voluptate totam. Ullam voluptate iure sed culpa esse maxime, neque molestias in ipsum eaque necessitatibus ratione. Eius pariatur iure sunt tenetur. Reprehenderit voluptatibus repellat fugit non illo, ducimus quae? Hic aliquam excepturi, accusantium aut molestias totam. <br>
+        Ipsum a iure architecto. Corrupti, quas magnam laudantium sint illum dolor impedit necessitatibus error ut veniam quidem esse libero! Omnis aperiam magnam delectus ab, distinctio dolore nihil. Culpa, earum libero, maiores cupiditate fugit quam delectus obcaecati totam tempore error quia ab nisi?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi ratione aliquid provident cum velit veniam rem similique voluptatem dignissimos in laudantium ullam consequatur architecto libero magni doloribus voluptas quod repellendus quam ex doloremque suscipit, beatae vero fugiat. Cum enim, blanditiis nulla pariatur magnam, quaerat minima distinctio omnis esse vero ducimus commodi officiis ex facere molestiae neque nostrum nemo molestias saepe. Ullam voluptatum ut id sed dolor quae nisi, quaerat incidunt omnis sunt quis cupiditate atque quo minima quidem iure maxime commodi distinctio nemo voluptatem placeat repellendus mollitia cumque! Velit quod saepe officia eum possimus modi quisquam iusto eius architecto commodi.</p>
     </section>
-    <section>
-        WORK
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid minima quia inventore, ratione neque molestias, nihil placeat eaque numquam a totam fugit adipisci quas facere ipsum id quidem officiis sed deleniti nesciunt suscipit tempora repudiandae. Sed possimus maxime ullam expedita quidem repellendus similique beatae, doloremque minus incidunt maiores vitae veniam voluptatem quos quasi consequuntur fugiat pariatur at? Delectus, laudantium provident velit consectetur ex accusamus beatae eaque facilis praesentium mollitia sit inventore numquam in consequatur ab nulla repellendus nam tempora voluptatibus eius qui molestiae totam repudiandae. Numquam quis officiis adipisci quasi, veniam sint blanditiis, praesentium tempore veritatis cum vel placeat harum!</p>
+    <section class="section2">
+        <h2>WORK</h2>
+        <img class="style-image" src="https://media.istockphoto.com/id/1403500817/photo/the-craggies-in-the-blue-ridge-mountains.jpg?s=612x612&w=0&k=20&c=N-pGA8OClRVDzRfj_9AqANnOaDS3devZWwrQNwZuDSk=" alt="image">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quos a nesciunt laudantium pariatur excepturi. Iste, officia optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quis dolor amet enim recusandae necessitatibus delectus doloremque reprehenderit animi ducimus possimus illum nobis error omnis, quasi nisi? Inventore facere voluptate dolores, quibusdam non officia quia laborum. Nulla repellat quam pariatur eligendi explicabo minima voluptas quibusdam ratione cumque voluptatum, alias harum.
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis accusantium odio laborum alias dolores, esse doloremque labore cum fuga cumque iure provident cupiditate illo vitae temporibus quos sint nisi. Culpa esse illum officia aut. Ex inventore consectetur ad neque illo consequuntur, mollitia voluptate quas, omnis aliquam quaerat? Minus fuga voluptate reprehenderit modi maxime natus libero accusamus nam, ab sint dolor autem asperiores nesciunt quisquam tempora fugit provident delectus quaerat quidem tempore, ducimus voluptatum voluptates, nemo consectetur. Iusto totam beatae corrupti at expedita, qui, unde ipsum quidem dolore consectetur fuga est voluptatibus temporibus, eaque deleniti nihil aperiam tempore voluptates repellat! Aspernatur!
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem saepe aspernatur blanditiis eveniet culpa enim minima dolorum sapiente facere in. Aperiam odio id explicabo rem nulla ad voluptatem quia nihil. Velit eligendi, quidem possimus laboriosam quod veniam debitis fugit, omnis quam tempora mollitia. Eaque eum aperiam veniam, molestias repudiandae commodi iusto delectus rerum deserunt quas adipisci porro similique, officiis nobis tempora accusamus cum rem reprehenderit quam ipsum doloribus cupiditate nesciunt voluptatem. Facere ut dicta labore sunt quo expedita, nesciunt nisi accusamus illum asperiores commodi autem delectus deserunt exercitationem quod voluptate, est numquam assumenda dolorum? Repudiandae earum delectus facere recusandae possimus? 
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus qui odit minima reprehenderit autem sequi ipsum sunt nihil iusto similique totam, quos illo illum ut cupiditate, fugit, ad beatae aliquid corporis impedit laboriosam. Illum fugit aliquid non impedit voluptas in quisquam! Libero repellendus, voluptate obcaecati dicta cumque quasi ipsa beatae.</p>
     </section>
-    <section>
-        RESUME
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, autem. Ad ab voluptatem cumque neque dolores aut numquam voluptas explicabo dolorem molestiae. Praesentium ad dignissimos dolor placeat saepe voluptatem, minus blanditiis expedita consequatur veniam cumque debitis nihil totam quibusdam non eius culpa iure quidem magni dolorum voluptas eligendi! Iure, a.</p>
+    <section class="section3">
+        <h3>RESUME</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, autem. Ad ab voluptatem cumque neque dolores aut numquam voluptas explicabo dolorem molestiae. Praesentium ad dignissimos dolor placeat saepe voluptatem, minus blanditiis expedita consequatur veniam cumque debitis nihil totam quibusdam non eius culpa iure quidem magni dolorum voluptas eligendi! Iure, a.
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi reprehenderit eligendi est quo quam officia sapiente! Iste excepturi labore distinctio non ullam perferendis, in id, placeat, minima voluptates reiciendis ratione? Dignissimos accusantium laborum deserunt quibusdam veniam non quaerat neque odit rem delectus, minus, reiciendis maxime labore, est enim quisquam dolorem libero. Quas sint vitae a totam, optio recusandae iusto aut, commodi eveniet tempore harum! Explicabo, tempore! Veniam debitis blanditiis error minima tempora hic sunt ipsum ipsa, accusamus placeat deleniti, perspiciatis, voluptatibus commodi odio magnam! Tempora laboriosam sequi assumenda, saepe quas minima voluptatem neque laudantium ipsum laborum quam reprehenderit placeat consequuntur soluta aperiam repudiandae molestiae, maxime velit id suscipit molestias. Modi corporis quo, nihil laboriosam aperiam nostrum voluptates dicta ducimus ut magni voluptas alias provident incidunt dolore ex sed veritatis assumenda officia minus maiores, placeat, harum repellendus cupiditate. Dolorem molestiae, id libero nesciunt ducimus sapiente aliquam neque laudantium minima praesentium exercitationem perferendis harum nam? Impedit eligendi aliquid omnis ea laudantium laboriosam magni repellat, neque quo asperiores dolor repellendus. Officia atque, quia tempore magni perspiciatis unde obcaecati, iusto accusantium reprehenderit veniam, aperiam praesentium natus ratione illum in provident porro. Aliquam, neque incidunt! Voluptates praesentium officia tenetur sed eos quibusdam itaque perspiciatis illo. 
+        </p>
         <iframe width="656" height="369" src="https://www.youtube.com/embed/salY_Sm6mv4" title="HTML in 5 minutes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </section>
 
 
-    <section>
-        CONTACT
+    <section class="contactsection">
+        <h3 id="mycontact">CONTACT</h3>
         <form>
             <label>Name</label>
             <input type="text" name="first name" placeholder="Type your name here"> <br>
 
-            <label>Number</label>
+            <label>Phone</label>
             <input type="tel" name="Number" placeholder="Type your number here"> <br>
 
             <label>Email</label>
             <input type="email" name="email" placeholder="Johndoe@gmail.com"> <br>
 
-            <label>Tell us about yourself</label> <br>
+            <label>Leave a comment</label> <br>
             <textarea cols="30" rows="10"></textarea> <br>
 
             <button type="submit">Submit</button>
         </form>
     </section>
     <footer>
-        <p> This is the footer</p>
+    <div>
+        <h4>Domain Names</h4>
+        <h4>Number Resources</h4>
+        <h4>Protocols</h4>
+        <h4>About Us</h4>
+    </div>
+    <div>
+        <h5>.INT Registry</h5>
+        <h5>Protocols</h5>
+        <h5>Information</h5>
+        <h5>Timezone Database</h5>
+    </div>
+    <div>
+        <p><a href="http://"><i class="fa-brands fa-square-instagram"></i></a></p>
+        <p><a href=""><i class="fa-brands fa-square-whatsapp"></i></a></p>
+        <p><a href=""><i class="fa-brands fa-linkedin"></i></a></p>
+        <p><a href=""><i class="fa-brands fa-facebook"></i></a></p>
+        <p class="footer12">
+            &copy;2025 Project Portfolio .All Rights Reserved
+        </p>
+    </div>
     </footer>
 </body>
 </html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+ul li{
+    display: inline;
+    padding: 10px;
+}
+body{
+    background-color: rgb(247, 240, 240);
+    font-family: roboto;
+    margin-top: 0px;
+    padding: 0px;
+    border: 3px solid rgb(247, 240, 240);
+    border-top: 5px solid  rgb(219, 201, 201);
+}
+.section1{
+   border: 3px  solid rgb(247, 240, 240); 
+   margin: 0; 
+   padding: 40px;
+   border-radius: 10px;
+}
+
+.section2{
+    border: 3px solid rgb(247, 240, 240); 
+    margin: 0; 
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.section3{
+    border: 3px solid rgb(247, 240, 240); 
+    margin: 0; 
+    padding: 10px;
+    border-radius: 10px;
+}
+.navsection{
+    height: 85px;
+    background-color:  rgb(219, 201, 201);
+    text-align: end;
+    border: 3px solid rgb(219, 201, 201);
+}
+
+.contactsection{
+    border: 3px solid (247, 240, 240);
+    margin: 3px; 
+    padding: 10px;
+    border-radius: 10px;
+}
+h3{
+    text-align: start;
+}
+footer a{
+    text-decoration: none;
+    margin: 0px;
+    color:maroon;
+}
+footer a:hover{
+    color: blanchedalmond;
+}
+.navicon a{
+    color: maroon;
+    text-decoration: none;
+}
+.navicon a:hover{
+    color: blanchedalmond;
+}
+
+#mycontact{
+    text-align: left;
+}
+
+header{
+    border: 10px solid rgb(219, 201, 201);
+    height: 20px;
+    background-color: rgb(219, 201, 201);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+footer{
+    background-color: rgb(219, 201, 201);
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 0px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -50px;
+}
+.style-image{
+    float: right;
+    height: 300px;
+    width: 300px;
+}
